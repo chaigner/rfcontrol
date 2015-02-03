@@ -65,9 +65,8 @@ Please cite this work as
 If you wish to cite this implementation specifically, you can do this as
 
     @misc{ rfcontrol,
-      author = {Aigner, Christoph Stefan and Clason, Christian and Rund, Armin}
+      author = {Aigner, Christoph Stefan and Clason, Christian and Rund, Armin},
       title  = {rfcontrol},
-      month  = feb,
-      year   = 2015,
-      doi    = {10.5281/zenodo.14808},
+      year   = {2015},
+      doi    = {10.5281/zenodo.1480}
     }
