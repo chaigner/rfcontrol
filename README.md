@@ -69,5 +69,5 @@ If you wish to cite this implementation specifically, you can do this as
       title  = {rfcontrol},
       month  = feb,
       year   = 2015,
-      doi    = {10.5281/zenodo.XXXXXX},
+      doi    = {10.5281/zenodo.14808},
     }
