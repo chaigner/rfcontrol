@@ -1,6 +1,6 @@
 function [J,G,Xk] = objfun(d,u)
 % OBJFUN compute functional value, gradient
-% [J,G,XK] = OBJFUN(D,XK,DX) computes the value J of the functional 
+% [J,G,XK] = OBJFUN(D,U) computes the value J of the functional 
 % to be minimized together with the gradient G in the point U.
 % The structure XK contains the necessary information to evaluate the 
 % Hessian in U. The structure D contains the problem parameters. See
