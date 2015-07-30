@@ -6,9 +6,13 @@
 %   multi-slice excitation, 
 %   http://math.uni-graz.at/mobis/publications/SFB-Report-2015-001.pdf
 %
-% February 3, 2015         Christoph S. Aigner (christoph.aigner@tugraz.at)
+% February 3, 2015,  V1.0 original version 
+%    July 30, 2015,  V1.1 changed to a default flip angle of 90 degrees 
+%
+%                          Christoph S. Aigner (christoph.aigner@tugraz.at)
 %                          Christian Clason (christian.clason@uni-due.de)
 %                          Armin Rund (armin.rund@uni-graz.at)
+
 
 %% set parameters
 % space discretization
@@ -20,7 +24,7 @@ d.dx   = d.xdis(2)-d.xdis(1);     % spatial grid size
 
 % time discretization
 load('z_grad_thk2_dt5.mat');     % slice selective gradient shape
-d.T     = 3.480;                 % optimization time in ms 
+d.T     = 13.92;                 % optimization time in ms 
 d.Nt    = size(z_grad,1)+1;      % total number of temporal points
 d.tdis  = linspace(0,d.T,d.Nt);  % temporal running variable
 d.dt    = d.tdis(2) - d.tdis(1); % temporal grid size
@@ -33,18 +37,18 @@ d.T2    = 81;           % transversal relaxation time in ms
 d.B0    = 3000;         % static magnetic field strength in mT
 d.M0c   = 1;            % normalized equilibrium magnetization
 d.B1c   = 0.5e-2;       % weighting for the RF amplitude [u*1e3*d.B1c] = muT
-d.G3    = 1;            % weighting for the z-Gradient in mT
-d.relax = 1;            % 0=without relaxation, 1=with relaxation
+d.G3    = 0.25;         % weighting for the z-Gradient in mT
+d.relax = 0;            % 0=without relaxation, 1=with relaxation
 d.u0 = zeros(d.Nu,1);   % RF initial guess
 d.v  = zeros(d.Nt-1,1); % fixed with zeros
 d.w  = z_grad;          % fixed with external shape
-d.alpha = 1e-4 ;        % control costs for u (SAR)
+d.alpha = 1e-4;         % control costs for u (SAR)
 
 % initial magnetization
 d.M0    = d.M0c*repmat([0;0;1],1,d.Nx); 
 
 % TR-CG-Newton parameters
-tr.maxit  = 5;         % maximum number of TR Newton iterations
+tr.maxit  = 5;        % maximum number of TR Newton iterations
 tr.reltol = 1e-4;      % relative tolerance for gradient norm in Newton
 tr.abstol = 1.2e-7;    % absolute tolerance for gradient norm in Newton
 tr.rho    = 1;         % initial trust region radius
@@ -62,7 +66,7 @@ tr.cgits  = 50;        % maximum number of CG iterations
 phase_shift = 0;             % alternating phase (pi) shifted excitation
 sms         = 6;             % number of simultaneous slices (2,..,6)
 slice_sep   = 0.025;         % multislice parameters
-d.phi       = 25;            % flip angle in deg
+d.phi       = 90;            % flip angle in deg
 
 % define center positions for all simultaneous slices 
 if mod(sms,2) % (different for even/odd slice number)
