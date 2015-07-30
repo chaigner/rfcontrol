@@ -5,8 +5,11 @@
 %   Efficient high-resolution RF pulse design applied to simultaneous 
 %   multi-slice excitation, 
 %   http://math.uni-graz.at/mobis/publications/SFB-Report-2015-001.pdf
+%     
+% February 3, 2015,  V1.0 original version 
+%    July 30, 2015,  V1.1 no changes
 %
-% February 3, 2015         Christoph S. Aigner (christoph.aigner@tugraz.at)
+%                          Christoph S. Aigner (christoph.aigner@tugraz.at)
 %                          Christian Clason (christian.clason@uni-due.de)
 %                          Armin Rund (armin.rund@uni-graz.at)
 
