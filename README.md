@@ -1,4 +1,4 @@
-rfcontrol [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.14808.svg)](http://dx.doi.org/10.5281/zenodo.14808)
+rfcontrol [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.14808.svg)](http://dx.doi.org/10.5281/zenodo.31187)
 ========
 
 This repository contains a MATLAB implementation of the approach for computing RF pulses in magnetic resonance imaging described in [1], based on a trust-region CG-Newton method for optimal control of the full time-dependent Bloch equation. Test scripts are provided to reproduce the numerical optimization and simulation results in the paper [1].
@@ -68,5 +68,5 @@ If you wish to cite this implementation specifically, you can do this as
       author = {Aigner, Christoph Stefan and Clason, Christian and Rund, Armin},
       title  = {rfcontrol},
       year   = {2015},
-      doi    = {10.5281/zenodo.1480}
+      doi    = {10.5281/zenodo.31187}
     }
