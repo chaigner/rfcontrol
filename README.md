@@ -46,8 +46,9 @@ Reference
 [1] C. S. Aigner, C. Clason, A. Rund and R. Stollberger: <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Efficient high-resolution RF pulse design applied to simultaneous 
 multi-slice excitation*, <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;SFB-Report 2015-001, 2015.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<http://math.uni-graz.at/mobis/publications/SFB-Report-2015-001.pdf>
+&nbsp;&nbsp;&nbsp;&nbsp;[Journal of Magnetic Resonance, in press, 2015](http://dx.doi.org/10.1016/j.jmr.2015.11.013).<br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;[Preprint](http://math.uni-graz.at/mobis/publications/SFB-Report-2015-001.pdf)
 
 ##### bibtex:
 
@@ -56,10 +57,10 @@ Please cite this work as
     @techreport{ rfcontrol,
        author      = {Aigner, Christoph Stefan and Clason, Christian and Rund, Armin and Stollberger, Rudolf},
        title       = {Efficient high-resolution {RF} pulse design applied to simultaneous multi-slice excitation},
-       number      = {SFB-Report 2015-001},
-       institution = {{SFB ``Mathematical Optimization and Biomedical Applications''}},
+       journal     = {Journal of Magnetic Resonance},
+       volume      = {in press},
        year        = {2015},
-       url         = {http://math.uni-graz.at/mobis/publications/SFB-Report-2015-001.pdf}
+       doi         = {10.1016/j.jmr.2015.11.013}
     }
 
 If you wish to cite this implementation specifically, you can do this as
