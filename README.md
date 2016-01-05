@@ -46,9 +46,8 @@ Reference
 [1] C. S. Aigner, C. Clason, A. Rund and R. Stollberger: <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Efficient high-resolution RF pulse design applied to simultaneous 
 multi-slice excitation*, <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;[Journal of Magnetic Resonance, in press, 2015](http://dx.doi.org/10.1016/j.jmr.2015.11.013).<br/>
-
-&nbsp;&nbsp;&nbsp;&nbsp;[Preprint](http://math.uni-graz.at/mobis/publications/SFB-Report-2015-001.pdf)
+&nbsp;&nbsp;&nbsp;&nbsp;[Journal of Magnetic Resonance, in press, 2015](http://dx.doi.org/10.1016/j.jmr.2015.11.013)
+([Preprint](http://math.uni-graz.at/mobis/publications/SFB-Report-2015-001.pdf)).<br/>
 
 ##### bibtex:
 
