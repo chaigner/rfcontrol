@@ -53,12 +53,13 @@ multi-slice excitation*, <br/>
 
 Please cite this work as 
 
-    @techreport{ rfcontrol,
+    @article{ rfcontrol,
        author      = {Aigner, Christoph Stefan and Clason, Christian and Rund, Armin and Stollberger, Rudolf},
        title       = {Efficient high-resolution {RF} pulse design applied to simultaneous multi-slice excitation},
        journal     = {Journal of Magnetic Resonance},
-       volume      = {in press},
-       year        = {2015},
+       volume      = {263},
+       pages       = {33--44},
+       year        = {2016},
        doi         = {10.1016/j.jmr.2015.11.013}
     }
 
